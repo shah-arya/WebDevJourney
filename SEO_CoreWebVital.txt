@@ -1,0 +1,14 @@
+SEO - Search Engine Optimization
+
+Core Web vital:
+
+ 1. CLS - Cumulative Layout Shift -> how much page is shifting while it's loading.
+ 2. LCP - Largest Contentful Paint -> renders time of the largest image/text block visible within the viewport. (~2.5 seconds)
+ 3. FID - First Input Delay -> time it takes to process the input. When user first interacts with a page to the time when the browser is actually able to begin processing event handlers in response to that interaction. (~100 milliseconds).
+
+Example - Open amazon.ca -> open inspect -> click on LIGHTHOUSE from the tabs
+
+// Lighthouse generates a report regarding what can be improved in out html page. It provides the score on basis of performance, accessibility, 
+// best practises, and SEO.
+
+// meta name = "description" content = "details of page">  
