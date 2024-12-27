@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>Form Application - Teaching Assistant</h1>
+    <!-- get -> used when we want to let server know something or when we want to hit it with a request, NO PASSWORDS
+     post_request -> used when we need to provide the big data  
+    
+     Input tags - inside the form
+     label tag - use to label that input
+    -->
+    <form action="post">
+        <div> <!-- BLock element -->
+            <label for="username">Enter your username</label>
+            <input type="text" name="username"  id="username" placeholder="Enter the username">
+        </div>
+        <br>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>    
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="subsccribe" id="subsccribe" value="yes">
+            <label for="subsccribe">Subscribe to my Channel</label>
+        </div>
+        <br>
+        <div>
+            <label for="content">Enter your comment here...</label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="fruits">Select yout favorite fruits:    </label>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+        </div>
+    </form>
+    
+</body>
+</html>
