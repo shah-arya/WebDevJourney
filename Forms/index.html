@@ -20,6 +20,7 @@
             <input type="text" name="username"  id="username" placeholder="Enter the username">
         </div>
         <br>
+        <hr>
         <div>
             <input type="radio" name="gender" id="male" value="male">
             <label for="male">Male</label>
@@ -27,16 +28,19 @@
             <label for="female">Female</label>    
         </div>
         <br>
+        <hr>
         <div>
             <input type="checkbox" name="subsccribe" id="subsccribe" value="yes">
             <label for="subsccribe">Subscribe to my Channel</label>
         </div>
         <br>
+        <hr>
         <div>
             <label for="content">Enter your comment here...</label>
             <textarea name="content" id="content" cols="30" rows="10"></textarea>
         </div>
         <br>
+        <hr>
         <div>
             <label for="fruits">Select yout favorite fruits:    </label>
             <select name="fruits" id="fruits">
@@ -45,6 +49,114 @@
                 <option value="cherry">Cherry</option>
           </select>
         </div>
+    </form>
+    <hr>
+    <br>
+    
+    <h1>FORM attributes and tags</h1>
+    
+    <form action="www.example.com">
+
+        <h3>Password Input</h3>
+
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="pwd">Password: </label>
+        <input type="password" name="password" id="pwd">
+
+        <hr>
+
+        <h3>TextArea</h3>
+        <p>hello, how r u?</p>
+        <textarea name="comments">Enter your comments here 1111.....</textarea>
+        <p>u done gud?</p>
+        <textarea name="discover" cols="30" rows="10">Enter your comments here 2222.....</textarea>
+    
+        <hr>
+
+        <h3>Radio Button</h3>
+        <p>
+            favorite genre radio:
+            <input type="radio" name="game" value="rock" checked> rock
+            <input type="radio" name="game" value="paper"> paper
+            <input type="radio" name="game" value="scissor"> scissor
+        </p>
+
+        <hr>
+
+        <h3>Checkbox</h3>
+        <p>
+            favorite genre checkbox:
+            <input type="checkbox" name="game" value="rock" checked> rock
+            <input type="checkbox" name="game" value="paper"> paper
+            <input type="checkbox" name="game" value="scissor"> scissor
+        </p>
+
+        <hr>
+
+        <h3>Dropdown List</h3>
+        <p>Device to learn music: </p>
+        <select name="devices">
+            <option value="ipod">Ipod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+
+        <h3>Multiple Select</h3>
+        <p>Choose more than one option by holding ctrl command key: </p>
+        <select name="cd" size="4" multiple>
+            <option value="guitar" selected>guitar</option>
+            <option value="drums">drums</option>
+            <option value="bass" selected>bass</option>
+            <option value="keyboards">keyboard</option>
+        </select>
+
+        <hr>
+
+        <h3>File Input</h3>
+        <p>upload song:</p>
+        <input type="text" name="browse">
+        <input type="file" name="user-song" id="user"><br>
+        <input type="submit" value="Upload">
+
+        <hr>
+
+        <h3>Submit button</h3>
+        <p>Subscribe to email list: </p>
+        <input type="text" name="email">
+        <input type="submit" name="Subscribe" value="Subscribe">
+
+        <hr>
+
+        <h3>Grouping Form elements</h3>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email: <br>
+            <input type="text" name="email"></label><br>
+            <label>Mobile: <br>
+            <input type="text" name="mobile"></label><br>
+            <label>Telephone: <br>
+            <input type="text" name="telephone"></label>
+        </fieldset>
+
+        <hr>
+
+        <h3>Form Validation</h3>
+        <p><q>require</q> is one of the attribute of form validation</p>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="pwd">Password: </label>
+        <input type="password" name="password" id="pwd" required>
+        <input type="submit" value="Submit">
+
+        <hr>
+        <h3>Date Input</h3>
+        <label for="depart">Departure date: </label>
+        <input type="date" name="depart" id="depart">
+        <input type="submit" value="Submit">
+
     </form>
     
 </body>
