@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio, Video and Media</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+    <script type="text/javascript">swfobject.embedSWF("flash/bird.swf","bird","400","300","8.0.0");</script>
+</head>
+<body>
+    <h2>IFRAME</h2>
+    <p>An iframe is like a little window that has been cut into your page
+        - and in that window we can see another page. The term iframe is an abbreviation
+        inline frame. 
+    </p>
+    <iframe width="450" height="350" src="https://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" frameborder="0"></iframe>
+    
+    <hr><hr>
+
+    <h2>How Flash Works</h2>
+    <p>
+        Since late 1990s, Flash has been a popular tool for creating animations,and later for playing audio and video 
+        in websites. 
+        <p>
+        When you create a Flash file in the Flash authoring environment, it is saved with the
+        <b>.fla </b>file extension. In order to use this file on a web page it has to be saved in different 
+        format known as <b>SWF</b> <em>(it has the .swf file extension)</em>
+       </p>
+    </p>
+    
+    <hr><hr>
+    The most popular way of creating Flash into a web page is by using javascript.
+
+    <div id="bird"><p>An animation of a bird taking a shower.</p></div>
+    <p>The script here is called SWFObject. Advantage to using it allows browsers to show
+        to show alternative content for users whose browsers are capable of showing Flash.
+    </p>
+    
+    <code>
+        &ltscript type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <br>&ltscript type="text/javascript">swfobject.embedSWF("flash/bird.swf","bird","400","300","8.0.0");</script>
+    </code>
+
+    <p>
+        <em>The type attribute is used on the script tag element to indicate that the script inside is written in JavaScript.
+            The src attribue tells the browser where to find the sccript.
+        </em>
+    </p>
+    <p>
+        <em> The second script element is used to tell the browser about the Flash movie, as well as which
+            element it should replace. This element is actually telling the SWFObject script <b>five</b> pieces
+            of information.
+        </em>
+    </p>
+
+    <hr><hr>
+
+    <h2>VIDEO FORMATS AND PLAYERS</h2>
+
+    <h3>Formats</h3>
+
+    <p>Some of the Video formats:</p>
+    <uls>
+        <li>BluRay</li>
+        <li>DVD</li>
+        <li>VHS</li>
+        <li>AVI</li>
+        <li>QuickTime</li>
+    </ul>
+    <br>
+    The process of converting a video into another format is sometimes referred to as "encoding" the video. <br>
+    There are several applications on the web to enable encode videos such as 
+    <em><a href="http://www.mirovideoconverter.com/" target="_blank">www.mirovideoconverter.com</a></em>
+
+    <hr><hr>
+
+    <h2>VIDEO TAG</h2>
+
+    <p>Below is recorded presentation of my DBMS project that displays use of MySql database and backend technologies like node.js and express.js </p>
+    <video src="project_video.mkv" width="300px" controls loop poster="image.jpg"></video>
+    
+
+
+</body>
+</html>
